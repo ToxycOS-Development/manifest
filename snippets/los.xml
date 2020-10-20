@@ -37,6 +37,9 @@
   <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="lineage" />
   <project path="hardware/ril" name="android_hardware_ril" remote="lineage" />
 
+  <!-- Packages -->
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+
   <!-- Prebuilt Stuff -->  
   <project path="prebuilts/tools-toxyc" name="android_prebuilts_tools-lineage" groups="pdk,tradefed" remote="lineage" />
 
