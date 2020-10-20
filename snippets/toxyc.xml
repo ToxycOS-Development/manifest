@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote name="toxyc"
+          fetch="https://github.com/ToxycOS/"
+          revision="refs/heads/r4.x" />
+
+  <project path="manifest" name="manifest" remote="toxyc" />
+  <project path="bionic" name="android_bionic" remote="toxyc" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="toxyc" />
+
+  <!-- Build Repos -->
+  <project path="build/make" name="android_build" groups="pdk" remote="toxyc" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="platform_testing" name="android_platform_testing" remote="toxyc" />
+  <project path="build/blueprint" name="android_build_blueprint" groups="pdk,tradefed" remote="toxyc" />
+  <project path="build/soong" name="android_build_soong" groups="pdk,tradefed" remote="toxyc" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- CodeAurora additions -->
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="toxyc" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="toxyc" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="toxyc" />
+
+  <!-- Toxyc Repos -->
+  <project path="vendor/toxyc" name="android_vendor_toxyc" remote="toxyc" />
+  <project path="device/toxyc/sepolicy" name="android_device_toxyc_sepolicy" remote="toxyc" />
+  <project path="hardware/toxyc/interfaces" name="android_hardware_toxyc_interfaces" remote="toxyc" />
+
+  <!-- External Repos -->
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="toxyc" />
+  <project path="external/selinux" name="android_external_selinux" remote="toxyc" />
+
+  <!-- Frameworks Repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="toxyc" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="toxyc" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="toxyc" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="toxyc" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" groups="qcom_wlan" remote="toxyc" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="toxyc" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="toxyc" />
+  <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="toxyc" />
+  <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="toxyc" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="toxyc" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="toxyc" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="toxyc" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="toxyc" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="toxyc" />
+
+  <!-- Sepolicy Repos -->
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="toxyc" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="toxyc" />
+
+  <!-- System Repos -->
+  <project path="system/bt" name="android_system_bt" groups="pdk" remote="toxyc" />
+  <project path="system/core" name="android_system_core" remote="toxyc" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="toxyc" />
+
+</manifest>
