@@ -34,6 +34,7 @@
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="toxyc" />
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="toxyc" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="toxyc" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="toxyc" />
 
   <!-- Toxyc Repos -->
   <project path="vendor/toxyc" name="android_vendor_toxyc" remote="toxyc" />
