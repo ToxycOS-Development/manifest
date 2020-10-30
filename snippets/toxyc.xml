@@ -44,6 +44,7 @@
   <!-- External Repos -->
   <project path="external/tinycompress" name="android_external_tinycompress" remote="toxyc" />
   <project path="external/selinux" name="android_external_selinux" remote="toxyc" />
+  <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="toxyc" />
 
   <!-- Frameworks Repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="toxyc" />
@@ -59,6 +60,7 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="toxyc" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" groups="pdk-fs" remote="toxyc" />
   <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" groups="pdk-fs" remote="toxyc" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="toxyc" />
   <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" remote="toxyc" />
   <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" remote="toxyc" />
   <project path="packages/apps/Calendar" name="android_packages_apps_Calendar" groups="pdk-fs" remote="toxyc" />
@@ -74,6 +76,7 @@
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="toxyc" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="toxyc" clone-depth="1"  />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="toxyc" clone-depth="1"  />
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
 
   <!-- Sepolicy Repos -->
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="toxyc" />

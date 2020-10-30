@@ -78,6 +78,7 @@
   <remove-project name="platform/packages/apps/DevCamera" />
   <remove-project name="platform/packages/apps/LegacyCamera" />
   <remove-project name="platform/packages/apps/Music" />
+  <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/QuickSearchBox" />
   <remove-project name="platform/packages/apps/SampleLocationAttribution" />
   <remove-project name="platform/packages/apps/Settings" />
