@@ -50,8 +50,10 @@
   <project path="frameworks/av" name="android_frameworks_av" remote="toxyc" />
   <project path="frameworks/base" name="android_frameworks_base" remote="toxyc" />
   <project path="frameworks/native" name="android_frameworks_native" remote="toxyc" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="toxyc" />
 
   <!-- Hardware repos -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="toxyc" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="toxyc" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom-caf_wlan" groups="qcom_wlan" remote="toxyc" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="toxyc" />
@@ -70,9 +72,13 @@
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="toxyc" />
   <project path="packages/apps/ToxycSettings" name="android_packages_apps_Hazard" remote="toxyc" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="toxyc" />
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="toxyc" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="toxyc" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="toxyc" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="toxyc" />
 
   <!-- Prebuilts -->
+  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="toxyc" />
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="toxyc" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="toxyc" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="toxyc" clone-depth="1"  />
@@ -87,5 +93,9 @@
   <project path="system/bt" name="android_system_bt" groups="pdk" remote="toxyc" />
   <project path="system/core" name="android_system_core" remote="toxyc" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="toxyc" />
+  <project path="system/incremental_delivery" name="android_system_incremental_delivery" remote="toxyc" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="toxyc" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="toxyc" />
+  <project path="system/vold" name="android_system_vold" remote="toxyc" />
 
 </manifest>
