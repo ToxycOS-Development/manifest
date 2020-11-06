@@ -38,6 +38,7 @@
 
   <!-- Toxyc Repos -->
   <project path="vendor/toxyc" name="android_vendor_toxyc" remote="toxyc" />
+  <project path="vendor/poison" name="android_vendor_poison" remote="toxyc" />
   <project path="device/toxyc/sepolicy" name="android_device_toxyc_sepolicy" remote="toxyc" />
   <project path="hardware/toxyc/interfaces" name="android_hardware_toxyc_interfaces" remote="toxyc" />
 
